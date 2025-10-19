@@ -1,5 +1,20 @@
 @import "style.css";
 
+@font-face {
+    font-family: "Satisfy Regular";
+    src: url("assets/fonts/Satisfy/Satisfy-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("assets/fonts/Nunito/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Italic";
+    src: url("assets/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf");
+}
+
 body {
     background-color: var(--main-bg-color);
     display: flex;
@@ -16,23 +31,103 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+    font:
+        1.3em "Nunito",
+        sans-serif;
 }
 
 .feedback {
     background-color: var(--primary-light-color);
-    /*margin: 25px;*/
     margin-left: 3em;
     margin-right: 3em;
     margin-bottom: 1em;
     border-radius: 40px;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.card-title {
+.feedback > label {
+    font-size: 1.5em;
+}
+
+.feedback-button-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.feedback-button {
+    background-color: var(--secondary-color);
+    height: 1.5em;
+    width: 4em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+
+    font:
+        1em "Nunito",
+        sans-serif;
+
+    border: none;
+    border-radius: 40px;
+}
+
+.feedback-button:hover {
+    background-color: var(--secondary-dark-color);
+}
+
+#feedback-field {
     margin-left: 1em;
     margin-right: 1em;
+
+    resize: none;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--secondary-color);
+    border-radius: 40px;
+    font-size: 0.8em;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact-method > img {
+    height: 1.3em;
+    width: auto;
+    padding: 0px;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+.contact-method:hover {
+    background-color: var(--secondary-dark-color);
+}
+
+.page-title {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+
+    font:
+        3.6em "Satisfy Regular",
+        sans-serif;
 }
 
 .hline-bottom {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     border-bottom: 4px solid var(--secondary-color);
 }

@@ -10,13 +10,32 @@
     </head>
     <body>
         <main>
-            <h1 class="hline-bottom card-title">Contact</h1>
+            <h1 class="hline-bottom page-title">Contact</h1>
+            <div class="contact-container">
+                <a class="contact-method" href="mailto:syndr@goose-games.com"
+                    ><img
+                        src="assets/icons/bootstrap/envelope-fill.svg"
+                        alt="Envelope icon"
+                    />
+                    <p>syndr@goose-games.com</p></a
+                >
+            </div>
             <p>
-                <a href="mailto:syndr@goose-games.com">syndr@goose-games.com</a>
+                Have things to say about this site? Let me know! Say whatever
+                you want about me below!
             </p>
             <form class="feedback">
-                <textarea></textarea>
-                <button></button>
+                <label for="feedback-field">Leave Feedback!</label>
+                <textarea
+                    id="feedback-field"
+                    rows="15"
+                    cols="30"
+                    placeholder="Leave feedback here."
+                    aria-label="Leave feedback here."
+                ></textarea>
+                <div class="feedback-button-container">
+                    <button class="feedback-button">Submit</button>
+                </div>
             </form>
         </main>
         <!--<script src="contact.js"></script>-->
