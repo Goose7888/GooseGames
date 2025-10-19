@@ -1,0 +1,38 @@
+@import "style.css";
+
+body {
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 75%;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.feedback {
+    background-color: var(--primary-light-color);
+    /*margin: 25px;*/
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 1em;
+    border-radius: 40px;
+}
+
+.card-title {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.hline-bottom {
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--secondary-color);
+}
