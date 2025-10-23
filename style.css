@@ -7,8 +7,23 @@
     --secondary-dark-color: #a8cbc7;
 }
 
-/* navbar styling here
 .navbar {
+    background-color: var(--secondary-color);
 
+    display: flex;
+    justify-content: end;
+    width: 75%;
+    margin-bottom: 1em;
 }
-*/
+
+.navbar > ul {
+    display: flex;
+}
+
+.home-tab {
+    background-color: var(--primary-color);
+}
+
+.tab {
+    background-color: var(--primary-color);
+}
